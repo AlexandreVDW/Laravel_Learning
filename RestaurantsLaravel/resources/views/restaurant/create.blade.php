@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Create</title>
 </head>
 <body>
-    
+    <nav>
+        <a href="{{ route('restaurant.index') }}">Home</a>
+        <a href="{{ route('restaurant.create') }}">Create</a>
+    </nav>
 <form action="/restaurant/create" method="POST" class="mb-3">
 @csrf
     <div class="mb-3">
